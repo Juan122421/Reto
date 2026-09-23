@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Buscador de personajes — Rick and Morty</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/retostyle.css" />
 </head>
 <body>
   <main class="app">
@@ -23,14 +23,18 @@
         <option value="">Todas las especies</option>
         <option value="Human">Humano</option>
         <option value="Alien">Alien</option>
+        <option value="Humanoid">Humanoide</option>
+        <option value="Robot">Robot</option>
       </select>
+      <button type="button" id="btn-limpiar">Limpiar filtros</button>
     </form>
-
+    <button id ="btn-orden">Ordenar A-Z </button>
+    <input type="checkbox" id="check-primeros10"><label for="check-primeros10">Primeros 10 personajes</label>
     <p id="contador"></p>
-
+    <p id="estadisticas"></p>   
     <section id="resultados" class="personajes-grid"></section>
   </main>
 
-  <script src="script.js"></script>
+  <script src="assets/retojs.js"></script>
 </body>
 </html>
