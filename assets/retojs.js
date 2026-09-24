@@ -1,6 +1,3 @@
-// Para acceder a los elementos del HTML ya no usamos document.getElementById —
-// usamos document.querySelector, que acepta cualquier selector CSS (#id, .clase,
-// etiqueta...) y no solo ids.
 
 async function obtenerPersonajes() {
   const respuesta = await fetch("https://rickandmortyapi.com/api/character");
